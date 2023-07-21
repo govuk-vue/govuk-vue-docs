@@ -11,7 +11,8 @@ export default defineNuxtConfig({
         { property: 'og:image:alt', content: 'GOV.UK Vue'}
       ],
       htmlAttrs: {
-        class: 'govuk-template'
+        class: 'govuk-template',
+        lang: 'en-GB'
       },
       bodyAttrs: {
         class: 'govuk-template__body js-enabled'
