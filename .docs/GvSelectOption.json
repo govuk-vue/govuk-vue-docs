@@ -1,0 +1,1 @@
+{"props":[{"name":"text","type":{"name":"string"}},{"name":"value","type":{"name":"string|number|boolean|object"},"required":true}],"slots":[{"name":"default"}]}

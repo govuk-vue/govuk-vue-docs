@@ -1,0 +1,1 @@
+{"props":[{"name":"text","type":{"name":"string"},"defaultValue":{"func":false,"value":"'Skip to main content'"}},{"name":"href","type":{"name":"string"},"defaultValue":{"func":false,"value":"'#'"}}],"slots":[{"name":"default"}]}

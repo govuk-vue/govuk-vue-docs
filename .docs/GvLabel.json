@@ -1,0 +1,1 @@
+{"props":[{"name":"text","type":{"name":"string"}},{"name":"forId","type":{"name":"string"},"required":true},{"name":"isPageHeading","type":{"name":"boolean"},"defaultValue":{"func":false,"value":"false"}}],"slots":[{"name":"default"}]}

@@ -1,0 +1,1 @@
+{"props":[{"name":"text","type":{"name":"string"}},{"name":"href","type":{"name":"string"},"required":true},{"name":"component","description":"The component used to render the link, for example `RouterLink`.","type":{"name":"string|object"},"defaultValue":{"func":false,"value":"'a'"}}],"slots":[{"name":"default"}]}

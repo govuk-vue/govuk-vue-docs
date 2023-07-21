@@ -1,0 +1,1 @@
+{"props":[{"name":"title","description":"Title for the tabs table of contents. This will only be shown on smaller screens, where the tab list\nis displayed as a vertical list of links.","type":{"name":"string"}}],"slots":""}

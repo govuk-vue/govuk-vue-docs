@@ -1,15 +1,19 @@
 {
   "name": "govuk-vue-docs",
   "scripts": {
-    "dev": "nuxt dev",
-    "build": "nuxt build",
-    "generate": "nuxt generate",
-    "start": "nuxt start"
+    "dev": "concurrently \"vue-docgen --watch\" \"nuxt dev\"",
+    "generate": "vue-docgen & nuxt generate"
   },
   "devDependencies": {
     "@nuxt/content": "^2.6.0",
+    "concurrently": "^8.0.1",
     "govuk-frontend": "^4.6.0",
     "nuxt": "^3.5.1",
-    "sass": "^1.62.1"
+    "sass": "^1.62.1",
+    "vue-docgen-cli": "^4.67.0",
+    "vite-plugin-static-copy": "^0.16.0"
+  },
+  "dependencies": {
+    "govuk-vue": "1.0.0-alpha.4"
   }
 }

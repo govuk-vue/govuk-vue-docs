@@ -1,0 +1,1 @@
+{"props":[{"name":"title","type":{"name":"string"}},{"name":"headingLevel","type":{"name":"number"},"defaultValue":{"func":false,"value":"1"}},{"name":"text","type":{"name":"string"}}],"slots":[{"name":"title"},{"name":"default"}]}

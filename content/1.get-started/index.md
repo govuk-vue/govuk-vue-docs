@@ -1,0 +1,24 @@
+---
+layout: getstarted
+---
+
+# Get started
+
+## Install GOV.UK Vue
+
+It's easy to add GOV.UK Vue to both new and existing projects. Find out [how to install GOV.UK Vue](/get-started/installing-govuk-vue).
+
+You can [get help](/support) if you need support getting started.
+
+## Using GOV.UK Vue with Nuxt
+
+Find out [how to use GOV.UK Vue with Nuxt](/get-started/using-govuk-vue-with-nuxt).
+
+## Using `router-link` or `nuxt-link`
+
+If you're using Vue Router or Nuxt, find out [how to use router-link or nuxt-link](/get-started/using-router-link-or-nuxt-link) with GOV.UK Vue components.
+
+## Differences to GOV.UK Frontend
+
+If you've used [GOV.UK Frontend](https://frontend.design-system.service.gov.uk/) before, there are some
+[differences between GOV.UK Vue and GOV.UK Frontend](/get-started/differences-to-govuk-frontend) that you should be aware of.

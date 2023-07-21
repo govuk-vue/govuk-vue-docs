@@ -1,0 +1,1 @@
+{"props":[{"name":"visuallyHiddenTitle","type":{"name":"string"},"defaultValue":{"func":false,"value":"'Support links'"}},{"name":"text","type":{"name":"string"}}],"slots":[{"name":"items"},{"name":"default"}]}

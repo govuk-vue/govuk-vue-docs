@@ -1,0 +1,1 @@
+{"props":[{"name":"text","type":{"name":"string"}},{"name":"href","type":{"name":"string"}},{"name":"active","type":{"name":"boolean"}},{"name":"component","description":"The component used to render the link, for example `RouterLink`. Will default to `a` if an `href` is provided or no link otherwise.","type":{"name":"string|object"}}],"slots":[{"name":"default"}]}
