@@ -26,11 +26,6 @@ export default defineNuxtConfig({
     '@nuxt/content'
   ],
   vite: {
-    server: {
-      fs: {
-        allow: ["C:/Users/Matt/Documents/GitHub/govuk-vue/dist"]
-      }
-    },
     plugins: [
       viteStaticCopy({
         targets: [
@@ -41,6 +36,13 @@ export default defineNuxtConfig({
         ]
       })
     ],
+    css: {
+      preprocessorOptions: {
+        scss: {
+          quietDeps: true
+        }
+      }
+    }
   },
   content: {
     documentDriven: true,
