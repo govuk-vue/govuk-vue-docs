@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       meta: [
         { property: 'og:image', content: '/assets/images/gv-opengraph.png'},
         { property: 'og:image:alt', content: 'GOV.UK Vue'},
-        { property: 'description', content: 'GOV.UK Vue provides Vue implementations of every component in the GOV.UK Design System.' }
+        { name: 'description', content: 'GOV.UK Vue provides Vue implementations of every component in the GOV.UK Design System.' }
       ],
       htmlAttrs: {
         class: 'govuk-template',
