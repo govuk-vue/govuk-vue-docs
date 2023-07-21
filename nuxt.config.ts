@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     head: {
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
       meta: [
-        { property: 'og:image', content: '/assets/images/opengraph-image.png'},
+        { property: 'og:image', content: '/assets/images/gv-opengraph.png'},
         { property: 'og:image:alt', content: 'GOV.UK Vue'}
       ],
       htmlAttrs: {
