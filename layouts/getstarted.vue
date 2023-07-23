@@ -1,7 +1,8 @@
+
 <template>
   <gvd-page-wrapper>
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-one-quarter">
+      <div class="govuk-grid-column-one-quarter" v-if="isDesktop">
         <GvdSubNav>
           <ContentNavigation v-slot="{ navigation }" :query="getStartedQuery">
             <GvdSubNavSection>
@@ -22,6 +23,8 @@
 
 <script setup lang="ts">
 const { page } = useContent()
+import { useIsDesktop } from '~/composables/useIsDesktop'
 
+const isDesktop = useIsDesktop()
 const getStartedQuery = queryContent('get-started').where({ title: { $ne: 'Get started' } })
 </script>

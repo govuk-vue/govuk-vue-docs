@@ -1,20 +1,47 @@
 <script setup lang="ts">
+import { useIsDesktop } from '~/composables/useIsDesktop'
+
 const props = defineProps({
-  to: String
+  showMobileNav: Boolean
 })
 
 const currentPath = useRoute().path
+const isDesktop = useIsDesktop()
+
+const expandedSections = ref(new Array<string>)
+
+function pathToSubnavId(path: string) {
+  return `subnav-${path.replaceAll('/','')}`;
+}
+
+function toggleSection(path: string) {
+  if(expandedSections.value.includes(path)) {
+    expandedSections.value = expandedSections.value.filter(s => s !== path)
+  } else {
+    expandedSections.value.push(path)
+  }
+}
 </script>
 
 <template>
-  <nav id="gvd-navigation" class="gvd-navigation govuk-clearfix" role="navigation" aria-labelledby="gvd-navigation-heading">
+  <nav id="gvd-navigation" class="gvd-navigation govuk-clearfix" role="navigation" aria-labelledby="gvd-navigation-heading" :hidden="!showMobileNav && !isDesktop">
     <h1 class="govuk-visually-hidden" id="gvd-navigation-heading">Menu</h1>
     <ContentNavigation v-slot="{ navigation }">
       <ul class="gvd-navigation__list gvd-width-container">
         <li v-for="link of navigation.filter(n => n.title != 'Example page')" :key="link._path" class="gvd-navigation__list-item" :class="{'gvd-navigation__list-item--current': currentPath.startsWith(link._path)}">
-          <NuxtLink :to="link._path" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline app-navigation__link js-app-navigation__link">
+          <NuxtLink v-if="isDesktop" :to="link._path" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline app-navigation__link js-app-navigation__link">
             {{ link.title }}
           </NuxtLink>
+          <button v-if="!isDesktop" class="gvd-navigation__button" :aria-expanded="expandedSections.includes(link._path)" :aria-controls="pathToSubnavId(link._path)" @click="toggleSection(link._path)">
+            {{ link.title }}
+          </button>
+          <ul v-if="!isDesktop" class="gvd-navigation__subnav" :aria-label="link.title" :id="pathToSubnavId(link._path)" :hidden="!expandedSections.includes(link._path)">
+            <li v-for="child of link.children" class="gvd-navigation__subnav-item">
+              <NuxtLink :to="child._path" class="govuk-link govuk-link--no-visited-state govuk-link--no-underline">
+                {{ child.title }} <template v-if="child._path === link._path">overview</template>
+              </NuxtLink>
+            </li>
+          </ul>
         </li>
       </ul>
     </ContentNavigation>
@@ -46,6 +73,10 @@ $app-light-grey: #f8f8f8;
 .gvd-navigation {
   border-bottom: 1px solid $govuk-border-colour;
   background-color: $app-light-grey;
+
+  &[hidden] {
+    display: none;
+  }
 }
 
 .gvd-navigation__list {

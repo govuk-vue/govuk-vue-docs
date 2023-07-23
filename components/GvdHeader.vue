@@ -1,3 +1,19 @@
+<script setup lang="ts">
+import { useIsDesktop } from '~/composables/useIsDesktop'
+
+const isDesktop = useIsDesktop()
+const showMobileNav = ref(false)
+
+function toggleMobileNav() {
+  showMobileNav.value = !showMobileNav.value
+}
+
+onBeforeRouteLeave((to, from, next) => {
+  showMobileNav.value = false;
+  next()
+})
+</script>
+
 <template>
   <header class="govuk-header gvd-header" role="banner">
     <div class="govuk-header__container govuk-width-container gvd-header__container gvd-width-container">
@@ -19,8 +35,12 @@
           </span>
         </a>
       </div>
+      <button v-if="!isDesktop" class="govuk-header__menu-button" :class="{ 'govuk-header__menu-button--open': showMobileNav }" aria-controls="gvd-navigation" :aria-expanded="showMobileNav" @click="toggleMobileNav">
+        Menu
+      </button>
     </div>
   </header>
+  <gvd-navigation :show-mobile-nav="showMobileNav"/>
 </template>
 
 <style lang="scss" scoped>
