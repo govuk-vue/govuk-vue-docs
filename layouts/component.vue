@@ -16,7 +16,7 @@
         <span class="govuk-caption-xl" v-if="page.title != 'Components'">Components</span>
         <ContentDoc/>
 
-        <ContentNavigation v-slot="{ navigation }" :query="componentsQuery" v-if="page.title === 'Components'">
+        <ContentNavigation v-slot="{ navigation }" :query="componentsQuery" v-if="!isDesktop && page.title === 'Components'">
           <nav>
             <ul class="govuk-list">
               <li class="govuk-!-margin-bottom-2" v-for="link in navigation[0].children" :key="link._path">
