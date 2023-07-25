@@ -6,7 +6,7 @@
         <GvdSubNav>
           <ContentNavigation v-slot="{ navigation }" :query="getStartedQuery">
             <GvdSubNavSection>
-              <GvdSubNavItem v-for="link in navigation[0].children" :key="link._path" :to="link._path">
+              <GvdSubNavItem v-if="navigation && navigation.length > 0" v-for="link in navigation[0].children" :key="link._path" :to="link._path">
                 {{ link.title }}
               </GvdSubNavItem>
             </GvdSubNavSection>
