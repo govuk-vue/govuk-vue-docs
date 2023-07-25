@@ -1,7 +1,7 @@
 <template>
   <gvd-page-wrapper>
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-one-quarter" v-if="isDesktop">
+      <div class="govuk-grid-column-one-quarter" :hidden="!isDesktop">
         <GvdSubNav>
           <ContentNavigation v-slot="{ navigation }" :query="componentsQuery">
             <GvdSubNavSection>
