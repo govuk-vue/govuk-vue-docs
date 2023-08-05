@@ -8,7 +8,7 @@ Use the back link component to help users go back to the previous page in a mult
 
 See the [GOV.UK Design System documentation on back links](https://design-system.service.gov.uk/components/back-link/) for more information on when to use this component.
 
-```vue
+```vue-html
 <gv-back-link href="https://example.com">Back</gv-back-link>
 ```
 

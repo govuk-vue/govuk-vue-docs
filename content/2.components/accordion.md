@@ -8,7 +8,7 @@ The accordion component lets users show and hide sections of related content on 
 
 See the [GOV.UK Design System documentation on accordions](https://design-system.service.gov.uk/components/accordion/) for more information on when to use this component.
 
-```vue
+```vue-html
 <gv-accordion>
   <gv-accordion-section heading="Writing well for the web">
     <p class="govuk-body">This is the content for Writing well for the web.</p>

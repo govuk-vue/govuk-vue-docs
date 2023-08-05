@@ -11,7 +11,7 @@ export default defineNitroPlugin((nitroApp) => {
       // Loop until there are no more examples in this document
       do {
         // Find the next code block
-        const cbRegex = /(?<block>```vue(?<rawcode>[.\s\S]+?)```)/mi
+        const cbRegex = /(?<block>```vue(?:-html)?(?<rawcode>[.\s\S]+?)```)/mi
         const codeBlock = result.match(cbRegex);
 
         if(codeBlock && codeBlock.length > 0) {
@@ -51,7 +51,7 @@ export default defineNitroPlugin((nitroApp) => {
 #code
 $<block>
 ::
-        `).replace('```vue', '```converted')
+        `).replace('```vue-html', '```converted-vue-html').replace('```vue', '```converted-vue')
           i++;
         } else {
           gotMatch = false;
@@ -60,7 +60,7 @@ $<block>
       } while(gotMatch)
 
       // Change back the fenced Vue code blocks
-      file.body = result.replace(/```converted/g,'```vue');
+      file.body = result.replace(/```converted-vue-html/g,'```vue-html').replace(/```converted-vue/g,'```vue');
     }
   })
 })

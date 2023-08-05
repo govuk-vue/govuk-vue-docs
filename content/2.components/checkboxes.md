@@ -101,7 +101,7 @@ const termsAccepted = ref('No')
 
 You can add hints to both the checkbox group and individual checkboxes using the `hint` prop or slot.
 
-```vue
+```vue-html
 <gv-checkboxes
   :legend-is-page-heading="true"
   legend-class="govuk-fieldset__legend--l"
@@ -157,7 +157,7 @@ const countries = ref([])
 
 You can show conditional content that's only shown when a checkbox is checked using the `conditional` slot.
 
-```vue
+```vue-html
 <gv-checkboxes
   :legend-is-page-heading="true"
   legend-class="govuk-fieldset__legend--l"
@@ -193,7 +193,7 @@ You can show conditional content that's only shown when a checkbox is checked us
 
 Set the `size` prop to `small` to use smaller checkboxes.
 
-```vue
+```vue-html
 <gv-checkboxes
   :legend-is-page-heading="true"
   legend-class="govuk-fieldset__legend--m"
@@ -211,7 +211,7 @@ Set the `size` prop to `small` to use smaller checkboxes.
 
 Set the `error-message` prop to display an error.
 
-```vue
+```vue-html
 <gv-checkboxes
   :legend-is-page-heading="true"
   legend-class="govuk-fieldset__legend--l"

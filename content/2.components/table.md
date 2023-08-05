@@ -9,7 +9,7 @@ Use the table component to make information easier to compare and scan for users
 See the [GOV.UK Design System documentation on tables](https://design-system.service.gov.uk/components/table/)
 for more information on when to use this component.
 
-```vue
+```vue-html
 <gv-table caption="Dates and amounts">
   <gv-table-head>
     <gv-table-row>
@@ -38,7 +38,7 @@ for more information on when to use this component.
 
 Shorthand aliases are available to make your code closer to HTML and more succinct.
 
-```vue
+```vue-html
 <gv-table caption="GOV.UK Vue table components">
   <gv-thead>
     <gv-tr>

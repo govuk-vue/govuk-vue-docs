@@ -8,7 +8,7 @@ Make a page easier to scan by letting users reveal more detailed information onl
 
 See the [GOV.UK Design System documentation on the details component](https://design-system.service.gov.uk/components/details/) for more information on when to use this component.
 
-```vue
+```vue-html
 <gv-details summary="Help with nationality">
   <p class="govuk-body">
     We need to know your nationality so we can work out which elections you’re entitled to vote in. If you cannot 

@@ -8,7 +8,7 @@ The breadcrumbs component helps users to understand where they are within a webs
 
 See the [GOV.UK Design System documentation on breadcrumbs](https://design-system.service.gov.uk/components/breadcrumbs/) for more information on when to use this component.
 
-```vue
+```vue-html
 <gv-breadcrumbs>
   <gv-breadcrumb-item href="#">Home</gv-breadcrumb-item>
   <gv-breadcrumb-item href="#">Passports, travel and living abroad</gv-breadcrumb-item>
@@ -60,7 +60,7 @@ function handleClick(destination: String) {
 If you have long breadcrumbs you can configure the component to only show the first and last items on mobile devices
 by setting `:collapse-on-mobile="true"`.
 
-```vue
+```vue-html
 <gv-breadcrumbs :collapse-on-mobile="true">
   <gv-breadcrumb-item href="#">Home</gv-breadcrumb-item>
   <gv-breadcrumb-item href="#">Environment</gv-breadcrumb-item>

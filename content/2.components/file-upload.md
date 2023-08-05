@@ -9,7 +9,7 @@ Help users select and upload a file.
 See the [GOV.UK Design System documentation on file uploads](https://design-system.service.gov.uk/components/file-upload/)
 for more information on when to use this component.
 
-```vue
+```vue-html
 <gv-file-upload label="Upload a file"/>
 ```
 

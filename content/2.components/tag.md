@@ -8,7 +8,7 @@ Use the tag component to show users the status of something.
 
 See the [GOV.UK Design System documentation on tags](https://design-system.service.gov.uk/components/tag/) for more information on when to use this component.
 
-```vue
+```vue-html
 <gv-tag>completed</gv-tag>
 ```
 

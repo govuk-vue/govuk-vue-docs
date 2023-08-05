@@ -76,7 +76,7 @@ const eventName = ref('')
 
 You can pass any of the GOV.UK input size modifier classes via `class`.
 
-```vue
+```vue-html
 <gv-input label="5 character width" class="govuk-input--width-5" />
 <gv-input label="One-half width" class="govuk-!-width-one-half" />
 ```
@@ -85,7 +85,7 @@ You can pass any of the GOV.UK input size modifier classes via `class`.
 
 If you’re asking the user to enter a whole number, set the `inputmode` prop to `numeric` to use the numeric keypad on devices with on-screen keyboards.
 
-```vue
+```vue-html
 <gv-input :label-is-page-heading="true" label-class="govuk-label--l" inputmode="numeric" :spellcheck="false" class="govuk-input--width-10">
   <template #label>
     What is your account number?
