@@ -42,16 +42,16 @@ export default defineNitroPlugin((nitroApp) => {
           // Call the example component SFC we've just saved to disk
           // Temporarily change ```vue to ```converted so the regex doesn't pick it up next time round
           const exampleComponentName = exampleFilename.replace('.vue','');
+          result = result.replace(codeBlock.groups.block, `\n\n
 
-          result = result.replace(cbRegex, `\n\n
 ::gvd-code-sample
 #rendered
 <${exampleComponentName}/>
 
 #code
-$<block>
+${codeBlock.groups.block.replace('```vue-html', '```converted-vue-html').replace('```vue', '```converted-vue')}
 ::
-        `).replace('```vue-html', '```converted-vue-html').replace('```vue', '```converted-vue')
+        `)
           i++;
         } else {
           gotMatch = false;
