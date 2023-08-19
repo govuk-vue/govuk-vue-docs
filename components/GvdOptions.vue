@@ -38,7 +38,9 @@ function convertMarkdown(str: String) {
     return;
   }
 
-  let output = str.replace(/`(?<code>.+?)`/g, '<code class="gvd-code-inline">$<code></code>')
+  let output = str.replace(/`(?<code>.+?)`/g, (match, code) => {
+    return `<code class="gvd-code-inline">${code.replaceAll('<', '&lt;', '>', '&gt;')}</code>`
+  })
   output = output.replace(/\[(?<linkText>.+)\]\((?<url>.+)\)/ig, '<a href="$<url>" class="govuk-link">$<linkText></a>')
 
   return output
