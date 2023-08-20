@@ -22,7 +22,7 @@ const eventName = ref('')
 </template>
 ```
 
-## Binding with v-model and using events
+## Binding with `v-model` and using events
 
 Use `v-model` to bind data to the input, as you would with a native `<input>`.
 

@@ -159,4 +159,15 @@ $gvd-button-inverted-hover-background-colour: govuk-tint($gvd-button-inverted-fo
   box-shadow: inset 0 0 0 2px $govuk-focus-colour;
 }
 
+// The header and footer containers only has margin on small screens by default - we have to add some
+// otherwise headers and footers in code samples don't have any spacing before the logo
+.gvd-code-sample--rendered  {
+  .govuk-header__container.govuk-width-container,
+  .govuk-cookie-banner__message.govuk-width-container,
+  .govuk-footer .govuk-width-container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
 </style>
