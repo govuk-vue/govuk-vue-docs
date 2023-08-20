@@ -67,6 +67,12 @@
   </gvd-page-wrapper>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { NuxtLink } from '#components';
+definePageMeta({
+  documentDriven: {
+    page: false,
+    surround: false
+  }
+})
 </script>
