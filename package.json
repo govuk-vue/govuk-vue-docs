@@ -6,12 +6,12 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.6.0",
-    "concurrently": "^8.0.1",
+    "concurrently": "^8.2.0",
     "govuk-frontend": "^4.7.0",
-    "nuxt": "^3.5.1",
+    "nuxt": "^3.6.5",
     "sass": "^1.62.1",
-    "vue-docgen-cli": "^4.67.0",
-    "vite-plugin-static-copy": "^0.16.0"
+    "vite-plugin-static-copy": "^0.16.0",
+    "vue-docgen-cli": "^4.67.0"
   },
   "dependencies": {
     "govuk-vue": "1.0.0-alpha.20"
