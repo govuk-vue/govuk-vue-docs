@@ -9,7 +9,7 @@ The select component allows users to choose an option from a list.
 See the [GOV.UK Design System documentation on selects](https://design-system.service.gov.uk/components/select/)
 for more information on when to use this component.
 
-```vue-html
+```vue
 <gv-select label="Sort by">
   <gv-select-option value="published">
     Recently published
@@ -77,7 +77,7 @@ function handleChange() {
 
 You can add a hint using the `hint` prop or slot.
 
-```vue-html
+```vue
 <gv-select
   label="Choose location"
   hint="This can be different to where you went before"
@@ -98,7 +98,7 @@ You can add a hint using the `hint` prop or slot.
 
 Use the `error-message` prop or slot to show an error message if the user has not selected an option for a mandatory select.
 
-```vue-html
+```vue
 <gv-select
   label="Choose location"
   hint="This can be different to where you went before"

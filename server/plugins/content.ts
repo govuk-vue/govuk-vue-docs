@@ -11,7 +11,7 @@ export default defineNitroPlugin((nitroApp) => {
       // Loop until there are no more examples in this document
       do {
         // Find the next code block
-        const cbRegex = /(?<block>```vue(?:-html)?(?<rawcode>[.\s\S]+?)```)/mi
+        const cbRegex = /(?<block>```vue(?<rawcode>[.\s\S]+?)```)/mi
         const codeBlock = result.match(cbRegex);
 
         if(codeBlock && codeBlock.length > 0) {
@@ -19,8 +19,10 @@ export default defineNitroPlugin((nitroApp) => {
           // Pull out the raw code and wrap it in a <template> if it's not in SFC format, then save it
           let rawCode = codeBlock.groups.rawcode.trim();
           let sfc = rawCode;
+          let isVueHtml = false;
           if(sfc.indexOf('<template>') === -1 && sfc.indexOf('<script') === -1) {
             sfc = `<template>\n  ${sfc}\n</template>`
+            isVueHtml = true;
           }
 
           // Because the content folders are numbered (1., 2.) filenames end up an extraneous '.'. We have to remove it for the examples to work.
@@ -42,16 +44,16 @@ export default defineNitroPlugin((nitroApp) => {
           // Call the example component SFC we've just saved to disk
           // Temporarily change ```vue to ```converted so the regex doesn't pick it up next time round
           const exampleComponentName = exampleFilename.replace('.vue','');
-          result = result.replace(codeBlock.groups.block, `\n\n
 
+          result = result.replace(cbRegex, `\n\n
 ::gvd-code-sample
 #rendered
 <${exampleComponentName}/>
 
 #code
-${codeBlock.groups.block.replace('```vue-html', '```converted-vue-html').replace('```vue', '```converted-vue')}
+$<block>
 ::
-        `)
+        `).replace('```vue', `\`\`\`converted${(isVueHtml) ? '-html' : ''}`) // If the code example was not in SFC syntax originally, we want to end up with ```vue-html rather than ```vue to get the correct syntax highlighting
           i++;
         } else {
           gotMatch = false;
@@ -60,7 +62,7 @@ ${codeBlock.groups.block.replace('```vue-html', '```converted-vue-html').replace
       } while(gotMatch)
 
       // Change back the fenced Vue code blocks
-      file.body = result.replace(/```converted-vue-html/g,'```vue-html').replace(/```converted-vue/g,'```vue');
+      file.body = result.replace(/```converted/g,'```vue');
     }
   })
 })

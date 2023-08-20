@@ -12,7 +12,7 @@ answer that contains an error.
 See the [GOV.UK Design System documentation on error summaries](https://design-system.service.gov.uk/components/error-summary/)
 for more information on when to use this component.
 
-```vue-html
+```vue
 <gv-error-summary :disable-auto-focus="true">
   <gv-error-link target-id="name">
     Enter your full name

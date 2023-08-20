@@ -9,7 +9,7 @@ Use the skip link component to help keyboard-only users skip to the main content
 See the [GOV.UK Design System documentation on the skip link](https://design-system.service.gov.uk/components/skip-link/)
 for more information on when to use this component.
 
-```vue-html
+```vue
 <p class="govuk-body">
   To view the skip link component tab to this example, or click inside this example and press tab.
 </p>
@@ -24,7 +24,7 @@ Use the `href` prop to override this. The skip link will jump here when activate
 This component does not support [custom link components](/get-started/using-router-link-or-nuxt-link), such as
 `router-link` or `nuxt-link`, because the link should always jump to a section on the current page.
 
-```vue-html
+```vue
 <p class="govuk-body">
   To view the skip link component tab to this example, or click inside this example and press tab.
 </p>

@@ -9,7 +9,7 @@ Use a notification banner to tell the user about something they need to know abo
 See the [GOV.UK Design System documentation on notification banners](https://design-system.service.gov.uk/components/notification-banner/)
 for more information on when to use this component.
 
-```vue-html
+```vue
 <gv-notification-banner>
   <p class="govuk-notification-banner__heading">
     You have 7 days left to send your application.
@@ -27,7 +27,7 @@ By default, the success banner will be auto-focussed when it's mounted. You can 
 `:disable-auto-focus="true"`. You can also set `role="region"` - the default for success banners is `role="alert"`,
 but the auto-focus will be disabled for any other role.
 
-```vue-html
+```vue
 <gv-notification-banner type="success" :disable-auto-focus="true">
   <h3 class="govuk-notification-banner__heading">
     Training outcome recorded and trainee withdrawn
@@ -42,7 +42,7 @@ You can either use the `text` prop or the default slot to provide content to sho
 If you use the prop, the content will automatically be wrapped in a `<p class="govuk-notification-banner__heading">`, which will apply the
 correct paragraph styling. If you use the slot, you'll need to wrap your paragraphs manually.
 
-```vue-html
+```vue
 <gv-notification-banner text="There may be a delay in processing your application because of the coronavirus outbreak." />
 ```
 

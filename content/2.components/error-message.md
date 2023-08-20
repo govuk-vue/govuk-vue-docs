@@ -10,7 +10,7 @@ when there is a validation error. In the error message explain what went wrong a
 See the [GOV.UK Design System documentation on error messages](https://design-system.service.gov.uk/components/error-message/) 
 for more information on when to use this component.
 
-```vue-html
+```vue
 <gv-error-message>Enter your date of birth</gv-error-message>
 ```
 

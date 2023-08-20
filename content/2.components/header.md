@@ -9,7 +9,7 @@ The GOV.UK header shows users that they are on GOV.UK and which service they are
 See the [GOV.UK Design System documentation on the header](https://design-system.service.gov.uk/components/header/)
 for more information on when to use this component.
 
-```vue-html
+```vue
 <gv-header />
 ```
 
@@ -17,7 +17,7 @@ for more information on when to use this component.
 
 Use the `service-name` prop or slot to include your service name in the header. 
 
-```vue-html
+```vue
 <gv-header service-name="Service name" />
 ```
 
@@ -26,7 +26,7 @@ Use the `service-name` prop or slot to include your service name in the header.
 Pass a list of `GvHeaderNavigationItem`s in the `navigation` slot to include navigation links. Set the `active` prop to 
 `true` if the link is for the current page or one of its children.
 
-```vue-html
+```vue
 <gv-header service-name="Service name">
   <template #navigation>
     <gv-header-navigation-item href="#" :active="true">

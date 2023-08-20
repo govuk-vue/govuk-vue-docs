@@ -9,7 +9,7 @@ Use the fieldset component to group related form inputs.
 See the [GOV.UK Design System documentation on fieldsets](https://design-system.service.gov.uk/components/fieldset/)
 for more information on when to use this component.
 
-```vue-html
+```vue
 <gv-fieldset 
   legend="What is your address?" 
   :legend-is-page-heading="true" 

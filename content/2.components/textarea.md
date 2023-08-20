@@ -9,7 +9,7 @@ Use the textarea component when you need to let users enter an amount of text th
 See the [GOV.UK Design System documentation on textareas](https://design-system.service.gov.uk/components/textarea/) for
 more information on when to use this component.
 
-```vue-html
+```vue
 <gv-textarea label="Can you provide more detail?" :label-is-page-heading="true" label-class="govuk-label--l">
   <template #hint>
     Do not include personal or financial information, like your National Insurance number or credit card details. 
@@ -49,7 +49,7 @@ function handleKeyDown() {
 You can change the height of the textarea using the `rows` prop. This prop accepts a number, not a string, so should
 be set with `v-bind` or `:`.
 
-```vue-html
+```vue
 <gv-textarea 
   label="Can you provide more detail?" 
   :label-is-page-heading="true" 
@@ -66,7 +66,7 @@ be set with `v-bind` or `:`.
 
 Set the `error-message` prop to display an error.
 
-```vue-html
+```vue
 <gv-textarea 
   label="Can you provide more detail?" 
   :label-is-page-heading="true" 

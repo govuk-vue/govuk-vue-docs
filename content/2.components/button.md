@@ -53,7 +53,7 @@ function handleClick() {
 
 Set `:is-start-button="true"` to show a start button.
 
-```vue-html
+```vue
 <gv-button :is-start-button="true">
   Start now
 </gv-button>
@@ -63,13 +63,13 @@ Set `:is-start-button="true"` to show a start button.
 
 Use the `variant` prop to change between primary, secondary and warning buttons.
 
-```vue-html
+```vue
 <gv-button variant="secondary">
   Find address
 </gv-button>
 ```
 
-```vue-html
+```vue
 <gv-button variant="warning">
   Delete account
 </gv-button>
@@ -79,7 +79,7 @@ Use the `variant` prop to change between primary, secondary and warning buttons.
 
 Wrap buttons in a `gv-button-group` to display them side-by-side on larger screens or stacked on smaller screens.
 
-```vue-html
+```vue
 <gv-button-group>
   <gv-button>
     Save and continue

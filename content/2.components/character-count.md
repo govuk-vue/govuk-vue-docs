@@ -8,7 +8,7 @@ Help users know how much text they can enter when there is a limit on the number
 
 See the [GOV.UK Design System documentation on character counts](https://design-system.service.gov.uk/components/character-count/) for more information on when to use this component.
 
-```vue-html
+```vue
 <gv-character-count 
   label="Can you provide more detail?" 
   :label-is-page-heading="true" 
@@ -25,7 +25,7 @@ See the [GOV.UK Design System documentation on character counts](https://design-
 
 Use the `max-words` prop to count words instead of characters. A word is any group of consecutive non-whitespace characters.
 
-```vue-html
+```vue
 <gv-character-count 
   label="Enter a job description" 
   :label-is-page-heading="true" 

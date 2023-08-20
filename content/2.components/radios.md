@@ -9,7 +9,7 @@ Use the radios component when users can only select one option from a list.
 See the [GOV.UK Design System documentation on radios](https://design-system.service.gov.uk/components/radios/) for 
 more information on when to use this component.
 
-```vue-html
+```vue
 <gv-radios legend="Where do you live?" :legend-is-page-heading="true" legend-class="govuk-fieldset__legend--l">
   <gv-radio value="england">England</gv-radio>
   <gv-radio value="scotland">Scotland</gv-radio>
@@ -66,7 +66,7 @@ const selectedCountry = ref(null)
 
 Set the `direction` prop to `inline` to show checkboxes side-by-side on larger screens.
 
-```vue-html
+```vue
 <gv-radios 
   legend="Have you changed your name?"
   :legend-is-page-heading="true"
@@ -83,7 +83,7 @@ Set the `direction` prop to `inline` to show checkboxes side-by-side on larger s
 
 You can add hints to both the checkbox group and individual checkboxes using the `hint` prop or slot.
 
-```vue-html
+```vue
 <gv-radios legend="How do you want to sign in?" :legend-is-page-heading="true" legend-class="govuk-fieldset__legend--l">
   <template #hint>
     You’ll need an account to prove your identity and complete your Self Assessment.
@@ -108,7 +108,7 @@ You can add hints to both the checkbox group and individual checkboxes using the
 
 Set the `divider` prop to show a text divider above an option. The text is usually the word 'or'.
 
-```vue-html
+```vue
 <gv-radios legend="Where do you live?" :legend-is-page-heading="true" legend-class="govuk-fieldset__legend--l">
   <gv-radio value="england">England</gv-radio>
   <gv-radio value="scotland">Scotland</gv-radio>
@@ -122,7 +122,7 @@ Set the `divider` prop to show a text divider above an option. The text is usual
 
 Use the `conditional` slot to show a related question when an option is selected.
 
-```vue-html
+```vue
 <gv-radios
   :legend-is-page-heading="true"
   legend-class="govuk-fieldset__legend--l"
@@ -158,7 +158,7 @@ Use the `conditional` slot to show a related question when an option is selected
 
 Set the `size` prop to `small` to use smaller radios.
 
-```vue-html
+```vue
 <gv-radios size="small" legend="Filter" legend-class="govuk-fieldset__legend--m">
   <gv-radio value="monthly">Monthly</gv-radio>
   <gv-radio value="yearly">Yearly</gv-radio>
@@ -169,7 +169,7 @@ Set the `size` prop to `small` to use smaller radios.
 
 Set the `error-message` prop to display an error.
 
-```vue-html
+```vue
 <gv-radios
   legend="Where do you live?" 
   :legend-is-page-heading="true" 

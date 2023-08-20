@@ -9,7 +9,7 @@ Use a summary list to summarise information, for example, a user’s responses a
 See the [GOV.UK Design System documentation on summary lists](https://design-system.service.gov.uk/components/summary-lists/) for
 more information on when to use this component.
 
-```vue-html
+```vue
 <gv-summary-list>
   <gv-summary-list-row key-text="Name" value-text="Sarah Philips">
     <template #actions>
@@ -48,7 +48,7 @@ more information on when to use this component.
 You can remove the borders from a summary list with `:show-borders="false"` and from individual rows with 
 `:show-borders="false"`. You should only do this if the list doesn't have actions.
 
-```vue-html
+```vue
 <gv-summary-list :show-borders="false">
   <gv-summary-list-row key-text="Name" value-text="Sarah Philips"/>
   <gv-summary-list-row key-text="Date of birth" value-text="5 January 1978"/>

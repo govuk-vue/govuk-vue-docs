@@ -9,7 +9,7 @@ The tabs component lets users navigate between related sections of content, disp
 See the [GOV.UK Design System documentation on tabs](https://design-system.service.gov.uk/components/tabs/) for
 more information on when to use this component.
 
-```vue-html
+```vue
 <gv-tabs title="Cases opened">
   <gv-tab label="Past day">
     <h2 class="govuk-heading-l">Past day</h2>

@@ -8,7 +8,7 @@ The panel component is a visible container used on confirmation or results pages
 
 See the [GOV.UK Design System documentation on panels](https://design-system.service.gov.uk/components/panel/) for more information on when to use this component.
 
-```vue-html
+```vue
 <gv-panel>
   <template #title>
     Application complete
