@@ -5,5 +5,7 @@ function handleClick() {
 </script>
 
 <template>
-  <gv-button @click="handleClick">Save and continue</gv-button>
+  <gv-button @click="handleClick">
+    Save and continue
+  </gv-button>
 </template>

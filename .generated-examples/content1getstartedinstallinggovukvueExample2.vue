@@ -1,3 +1,0 @@
-<template>
-  <gv-footer />
-</template>

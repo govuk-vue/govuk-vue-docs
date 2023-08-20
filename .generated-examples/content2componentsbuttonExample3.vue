@@ -1,3 +1,5 @@
 <template>
-  <gv-button :is-start-button="true">Start now</gv-button>
+  <gv-button :is-start-button="true">
+  Start now
+</gv-button>
 </template>
