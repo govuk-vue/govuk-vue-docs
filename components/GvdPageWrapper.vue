@@ -10,17 +10,17 @@
         </main>
       </div>
     </slot>
-    <gv-footer copyright="Copyright © Matt Eason" copyright-href="http://github.com/matteason" :include-coat-of-arms="false" container-class="gvd-width-container">
+    <gv-footer container-class="gvd-width-container">
       <template #meta>
         <gv-footer-meta>
-          <template #items>
-            <gv-footer-meta-item text="GOV.UK Vue on GitHub" href="https://github.com/govuk-vue/govuk-vue"/>
-          </template>
+          <gv-footer-meta-item text="GOV.UK Vue on GitHub" href="https://github.com/govuk-vue/govuk-vue"/>
         </gv-footer-meta>
       </template>
-      <template #licence-logo/>
       <template #content-licence>
         Released under the <a href="https://opensource.org/license/mit/" class="govuk-footer__link">MIT License</a>.
+      </template>
+      <template #copyright>
+        <a href="https://github.com/matteason" class="govuk-footer__link">Copyright © Matt Eason</a>
       </template>
     </gv-footer>
 </template>
