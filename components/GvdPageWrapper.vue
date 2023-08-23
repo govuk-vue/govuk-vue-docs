@@ -1,7 +1,7 @@
 <template>
     <gvd-header/>
     <div class="gvd-phase-banner-wrapper">
-      <gv-phase-banner tag="alpha" tag-colour="red" class="gvd-phase-banner">GOV.UK Vue is in alpha, and some documentation is not complete - your <nuxt-link to="/support" class="govuk-link">feedback</nuxt-link> will help to improve it.</gv-phase-banner>
+      <gv-phase-banner tag="alpha" tag-colour="red" class="gvd-phase-banner">GOV.UK Vue is in alpha - your <nuxt-link to="/support" class="govuk-link">feedback</nuxt-link> will help to improve it.</gv-phase-banner>
     </div>
     <slot name="content">
       <div class="govuk-width-container gvd-width-container">
