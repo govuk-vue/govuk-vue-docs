@@ -27,7 +27,7 @@ See the [GOV.UK Design System documentation on accordions](https://design-system
 
 ## Controlling which sections are open
 
-By default, all sections will be closed. You can bind a boolean value with `v-model` to set and keep track of the 
+By default, all sections will be closed. You can bind a boolean value with `v-model:expanded` to set and keep track of the 
 open state of the accordion section.
 
 You can also set `:remember-expanded="true"` on the accordion to let the browser remember which sections a user has open. 
@@ -37,8 +37,8 @@ service is hosted on.
 
 :gv-warning-text{text="This behaviour is different to the GOV.UK Frontend Nunjucks macros, where rememberExpanded defaults to true. This is because in GOV.UK Vue, id is optional and the expanded state can't be stored reliably if an ID is not provided."}
 
-If a section has `v-model` set to `true` or `false` and `remember-expanded` is `true`, the value of `v-model` takes precedence. For example,
-if the stored state of a section is open but `v-model` is `false`, the section will be closed by default.
+If a section has `v-model:expanded` set to `true` or `false` and `remember-expanded` is `true`, the value of `v-model:expanded` takes precedence. For example,
+if the stored state of a section is open but `v-model:expanded` is `false`, the section will be closed by default.
 
 ```vue
 <script setup lang="ts">
@@ -51,13 +51,13 @@ const sectionCIsOpen = ref(null)
 
 <template>
   <gv-accordion>
-    <gv-accordion-section heading="Section A - forced open" v-model="sectionAIsOpen">
+    <gv-accordion-section heading="Section A - forced open" v-model:expanded="sectionAIsOpen">
       <p class="govuk-body">This section is forced to be open when first loaded.</p>
     </gv-accordion-section>
-    <gv-accordion-section heading="Section B - forced closed" v-model="sectionBIsOpen">
+    <gv-accordion-section heading="Section B - forced closed" v-model:expanded="sectionBIsOpen">
       <p class="govuk-body">This section is forced to be closed when first loaded</p>
     </gv-accordion-section>
-    <gv-accordion-section heading="Section C - default state" v-model="sectionCIsOpen">
+    <gv-accordion-section heading="Section C - default state" v-model:expanded="sectionCIsOpen">
       <p class="govuk-body">This section has no forced state, so defaults to closed</p>
     </gv-accordion-section>
   </gv-accordion>

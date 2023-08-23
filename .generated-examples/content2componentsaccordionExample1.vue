@@ -8,13 +8,13 @@ const sectionCIsOpen = ref(null)
 
 <template>
   <gv-accordion>
-    <gv-accordion-section heading="Section A - forced open" v-model="sectionAIsOpen">
+    <gv-accordion-section heading="Section A - forced open" v-model:expanded="sectionAIsOpen">
       <p class="govuk-body">This section is forced to be open when first loaded.</p>
     </gv-accordion-section>
-    <gv-accordion-section heading="Section B - forced closed" v-model="sectionBIsOpen">
+    <gv-accordion-section heading="Section B - forced closed" v-model:expanded="sectionBIsOpen">
       <p class="govuk-body">This section is forced to be closed when first loaded</p>
     </gv-accordion-section>
-    <gv-accordion-section heading="Section C - default state" v-model="sectionCIsOpen">
+    <gv-accordion-section heading="Section C - default state" v-model:expanded="sectionCIsOpen">
       <p class="govuk-body">This section has no forced state, so defaults to closed</p>
     </gv-accordion-section>
   </gv-accordion>

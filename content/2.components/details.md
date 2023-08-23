@@ -25,7 +25,7 @@ correct paragraph styling. If you use the slot, you'll need to wrap your paragra
 
 ## Using `v-model` with details
 
-You can bind a boolean value with `v-model` to set and keep track of the open state of the details element.
+You can bind a boolean value with `v-model:open` to set and keep track of the open state of the details element.
 
 ```vue
 <script setup lang="ts">
@@ -35,14 +35,14 @@ const isOpen = ref(true)
 </script>
 
 <template>
-  <gv-details summary="Help with nationality" v-model="isOpen">
+  <gv-details summary="Help with nationality" v-model:open="isOpen">
     <p class="govuk-body">
       We need to know your nationality so we can work out which elections you’re entitled to vote in. If you cannot 
       provide your nationality, you’ll have to send copies of identity documents through the post.
     </p>
   </gv-details>
   <gv-inset-text aria-live="polite">
-    <p class="govuk-body">Value of v-model: {{isOpen}}</p>
+    <p class="govuk-body">Value of v-model:open: {{isOpen}}</p>
   </gv-inset-text>
 </template>
 ```
