@@ -6,7 +6,7 @@ layout: component
 
 Use a summary list to summarise information, for example, a user’s responses at the end of a form.
 
-See the [GOV.UK Design System documentation on summary lists](https://design-system.service.gov.uk/components/summary-lists/) for
+See the [GOV.UK Design System documentation on summary lists](https://design-system.service.gov.uk/components/summary-list/) for
 more information on when to use this component.
 
 ```vue
