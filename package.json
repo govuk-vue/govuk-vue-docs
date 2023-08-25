@@ -2,11 +2,12 @@
   "name": "govuk-vue-docs",
   "scripts": {
     "dev": "concurrently \"vue-docgen --watch\" \"nuxt dev\"",
-    "generate": "vue-docgen & nuxt generate"
+    "generate": "vue-docgen && nuxt generate && npx copyfiles -V -u 3 \".nuxt/dist/server/assets/**\" \".output/public\""
   },
   "devDependencies": {
     "@nuxt/content": "^2.6.0",
     "concurrently": "^8.2.0",
+    "copyfiles": "^2.4.1",
     "govuk-frontend": "^4.7.0",
     "nuxt": "^3.6.5",
     "sass": "^1.62.1",
