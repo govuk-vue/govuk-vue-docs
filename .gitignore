@@ -1,7 +1,5 @@
 /.idea
 /.nuxt
 /.output
-/.docs
-/.generated-examples
 /node_modules
 /dist
