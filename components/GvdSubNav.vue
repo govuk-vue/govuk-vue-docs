@@ -6,23 +6,19 @@
 </template>
 
 <style lang="scss">
-$govuk-is-ie8: false;
-
-@import '../node_modules/govuk-frontend/govuk/settings/colours-applied';
-@import '../node_modules/govuk-frontend/govuk/settings/media-queries';
-@import '../node_modules/govuk-frontend/govuk/helpers/media-queries';
-@import '../node_modules/govuk-frontend/govuk/settings/typography-font';
-@import '../node_modules/govuk-frontend/govuk/settings/typography-font-families';
-@import '../node_modules/govuk-frontend/govuk/settings/typography-responsive';
-@import '../node_modules/govuk-frontend/govuk/helpers/font-faces';
-@import '../node_modules/govuk-frontend/govuk/helpers/typography';
-@import '../node_modules/govuk-frontend/govuk/settings/links';
-@import '../node_modules/govuk-frontend/govuk/helpers/links';
-@import '../node_modules/govuk-frontend/govuk/settings/measurements';
-@import '../node_modules/govuk-frontend/govuk/helpers/focused';
-@import '../node_modules/govuk-frontend/govuk/settings/spacing';
-@import '../node_modules/govuk-frontend/govuk/helpers/spacing';
-@import '../node_modules/govuk-frontend/govuk/tools/ie8';
+@import '../node_modules/govuk-frontend/dist/govuk/settings/colours-applied';
+@import '../node_modules/govuk-frontend/dist/govuk/settings/media-queries';
+@import '../node_modules/govuk-frontend/dist/govuk/helpers/media-queries';
+@import '../node_modules/govuk-frontend/dist/govuk/settings/typography-font';
+@import '../node_modules/govuk-frontend/dist/govuk/settings/typography-responsive';
+@import '../node_modules/govuk-frontend/dist/govuk/helpers/font-faces';
+@import '../node_modules/govuk-frontend/dist/govuk/helpers/typography';
+@import '../node_modules/govuk-frontend/dist/govuk/settings/links';
+@import '../node_modules/govuk-frontend/dist/govuk/helpers/links';
+@import '../node_modules/govuk-frontend/dist/govuk/settings/measurements';
+@import '../node_modules/govuk-frontend/dist/govuk/helpers/focused';
+@import '../node_modules/govuk-frontend/dist/govuk/settings/spacing';
+@import '../node_modules/govuk-frontend/dist/govuk/helpers/spacing';
 
 .gvd-subnav {
   // Since the back to top link is outside the flow of the document we need to create a space for it.

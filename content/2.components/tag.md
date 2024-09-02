@@ -9,7 +9,7 @@ Use the tag component to show users the status of something.
 See the [GOV.UK Design System documentation on tags](https://design-system.service.gov.uk/components/tag/) for more information on when to use this component.
 
 ```vue
-<gv-tag>completed</gv-tag>
+<gv-tag>Completed</gv-tag>
 ```
 
 ## Colours
@@ -19,15 +19,16 @@ You can set the tag colour using the following values for the `colour` prop.
 ```vue
 <script setup lang="ts">
 const options = [
-  { colour: 'grey', text: 'inactive' },
-  { colour: 'green', text: 'new' },
-  { colour: 'turquoise', text: 'active' },
-  { colour: 'blue', text: 'pending' },
-  { colour: 'purple', text: 'received' },
-  { colour: 'pink', text: 'sent' },
-  { colour: 'red', text: 'rejected' },
-  { colour: 'orange', text: 'declined' },
-  { colour: 'yellow', text: 'delayed' },
+  { colour: 'grey', text: 'Inactive' },
+  { colour: 'green', text: 'New' },
+  { colour: 'turquoise', text: 'Active' },
+  { colour: 'blue', text: 'Pending' },
+  { colour: 'light-blue', text: 'In progress' },
+  { colour: 'purple', text: 'Received' },
+  { colour: 'pink', text: 'Sent' },
+  { colour: 'red', text: 'Rejected' },
+  { colour: 'orange', text: 'Declined' },
+  { colour: 'yellow', text: 'Delayed' },
 ]
 </script>
 

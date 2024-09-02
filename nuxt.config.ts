@@ -22,7 +22,7 @@ export default defineNuxtConfig({
         lang: 'en-GB'
       },
       bodyAttrs: {
-        class: 'govuk-template__body js-enabled'
+        class: 'govuk-template__body js-enabled govuk-frontend-supported'
       },
     }
   },
@@ -34,11 +34,16 @@ export default defineNuxtConfig({
     '@nuxt/content'
   ],
   vite: {
+    resolve: {
+      dedupe: [
+        'vue'
+      ]
+    },
     plugins: [
       viteStaticCopy({
         targets: [
           {
-            src: 'node_modules/govuk-frontend/govuk/assets/*',
+            src: 'node_modules/govuk-frontend/dist/govuk/assets/*',
             dest: 'assets'
           }
         ]

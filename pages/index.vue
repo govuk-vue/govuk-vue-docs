@@ -2,6 +2,15 @@
   <gvd-page-wrapper>
     <template #content>
       <gvd-masthead/>
+      <gvd-whats-new>
+        <p class="govuk-body">2 September 2024: We've released GOV.UK Vue v1.0.0</p>
+        <p class="govuk-body">This is the first stable release of GOV.UK Vue and introduces full compatibility with GOV.UK Frontend v5, including three new components:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><router-link to="/components/task-list" class="govuk-link">Task list</router-link></li>
+          <li><router-link to="/components/password-input" class="govuk-link">Password input</router-link></li>
+          <li><router-link to="/components/service-navigation" class="govuk-link">Service navigation</router-link></li>
+        </ul>
+      </gvd-whats-new>
       <div class="gvd-width-container">
         <div class="govuk-main-wrapper govuk-main-wrapper--l">
           <div class="govuk-grid-row">
@@ -30,15 +39,14 @@
             <div class="govuk-grid-column-two-thirds govuk-!-mb-r4">
               <h2 class="govuk-heading-l">Goals of this project</h2>
               <p class="govuk-body">
-                GOV.UK Vue aims to provide a seamless development experience for you and an outstanding user experience for your users.
+                GOV.UK Vue aims to provide a seamless development experience and full compatibility with GOV.UK Frontend.
               </p>
               <p class="govuk-body">
                 It uses unmodified <a href="https://frontend.design-system.service.gov.uk/" class="govuk-link">GOV.UK Frontend</a> styles to provide consistency with other GOV.UK services,
-                combined with flexible, robust Vue components to accelerate your app development.
+                combined with flexible, robust Vue components.
               </p>
 
               <p class="govuk-body">
-                It supports every component in the <a href="https://design-system.service.gov.uk/" class="govuk-link">GOV.UK Design System</a> (even experimental components).
                 All GOV.UK Frontend JavaScript is reimplemented as idiomatic Vue code, including full support for all accessibility features.
               </p>
             </div>

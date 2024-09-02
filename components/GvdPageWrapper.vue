@@ -1,8 +1,5 @@
 <template>
     <gvd-header/>
-    <div class="gvd-phase-banner-wrapper">
-      <gv-phase-banner tag="alpha" tag-colour="red" class="gvd-phase-banner">GOV.UK Vue is in alpha - your <nuxt-link to="/support" class="govuk-link">feedback</nuxt-link> will help to improve it.</gv-phase-banner>
-    </div>
     <slot name="content">
       <div class="govuk-width-container gvd-width-container">
         <main class="govuk-main-wrapper" id="main-content" role="main">
@@ -85,6 +82,11 @@ table {
   border-spacing: 0;
 }
 
+/* Work round issue in warning text component in Frontend v5.6.0 */
+strong {
+  font-weight: bold
+}
+
 /* inter-regular - latin */
 @font-face {
   font-display: fallback;
@@ -104,8 +106,8 @@ table {
 
 $govuk-font-family: 'Inter', arial, sans-serif;
 
-@import '../node_modules/govuk-frontend/govuk/all';
-@import '../node_modules/govuk-frontend/govuk/settings/colours-palette';
+@import '../node_modules/govuk-frontend/dist/govuk/all';
+@import '../node_modules/govuk-frontend/dist/govuk/settings/colours-palette';
 
 .gvd-width-container {
   @include govuk-width-container(1100px);
