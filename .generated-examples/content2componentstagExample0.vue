@@ -1,3 +1,3 @@
 <template>
-  <gv-tag>completed</gv-tag>
+  <gv-tag>Completed</gv-tag>
 </template>

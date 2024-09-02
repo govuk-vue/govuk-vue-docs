@@ -66,7 +66,7 @@ function validateDate() {
   }
 
   // Check if whole date is valid  (eg 31-2-2023 would pass previous checks but fail here)
-  const parsedDate = Date.parse(`${year.value}-${month.value}-${day.value}`)
+  const parsedDate = Date.parse(`${year.value}-${month.value.padStart(2, '0')}-${day.value.padStart(2, '0')}`)
   
   if(isNaN(parsedDate)) {
     dayHasError.value = true

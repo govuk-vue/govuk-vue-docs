@@ -6,7 +6,7 @@ const month = ref('')
 const year = ref('')
 
 const formattedDate = computed(() => {
-  const parsedDate = Date.parse(`${year.value}-${month.value}-${day.value}`)
+  const parsedDate = Date.parse(`${year.value}-${month.value.padStart(2, '0')}-${day.value.padStart(2, '0')}`)
 
   if(!isNaN(parsedDate)) {
     const date = new Date(parsedDate)

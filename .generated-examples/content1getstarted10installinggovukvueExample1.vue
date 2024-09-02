@@ -1,3 +1,3 @@
 <template>
-  <gv-header />
+  <div class="govuk-heading-xl">GDS Transport test</div>
 </template>
