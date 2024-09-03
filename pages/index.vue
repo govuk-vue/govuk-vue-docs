@@ -56,10 +56,11 @@
             </div>
 
             <div class="govuk-grid-column-two-thirds govuk-!-mb-r4">
-              <h2 class="govuk-heading-l">Sponsoring GOV.UK Vue</h2>
+              <h2 class="govuk-heading-l">About GOV.UK Vue</h2>
               <p class="govuk-body">
-                GOV.UK Vue is built and maintained by <a href="https://github.com/matteason" class="govuk-link">Matt Eason</a> as
-                a community resource. It's not maintained or supported by GDS.
+                GOV.UK Vue is a community resource of the GOV.UK Design System. The Design System team is not
+                responsible for it and cannot support you with using it.
+                Contact <a href="https://github.com/matteason" class="govuk-link">Matt Eason</a> directly if you need help or you want to request a feature.
               </p>
               <p class="govuk-body">
                 If you find this project useful, I'd really appreciate your support through

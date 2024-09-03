@@ -7,7 +7,7 @@
             Build Vue apps with GOV.UK&nbsp;Design System components
           </h1>
           <p class="gvd-masthead__description">
-            GOV.UK Vue provides Vue implementations of every component in the GOV.UK Design System.
+            GOV.UK Vue is a community project which provides Vue components for the GOV.UK Design System.
           </p>
 
           <gv-button
