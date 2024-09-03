@@ -17,8 +17,6 @@ Contact me directly if you need help or you want to request a feature:
 
 Even if you don't have any issues, I'd love to hear how you're using GOV.UK Vue.
 
-
-
 ## Sponsoring GOV.UK Vue
 If you find this project useful, I'd really appreciate your support through [Ko-fi](https://ko-fi.com/matteason) or
 [GitHub Sponsors](https://github.com/sponsors/govuk-vue).
