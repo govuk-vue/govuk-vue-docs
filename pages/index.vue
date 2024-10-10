@@ -3,13 +3,8 @@
     <template #content>
       <gvd-masthead/>
       <gvd-whats-new>
-        <p class="govuk-body">2 September 2024: We've released GOV.UK Vue v1.0.0</p>
-        <p class="govuk-body">This is the first stable release of GOV.UK Vue and introduces full compatibility with GOV.UK Frontend v5, including three new components:</p>
-        <ul class="govuk-list govuk-list--bullet">
-          <li><router-link to="/components/task-list" class="govuk-link">Task list</router-link></li>
-          <li><router-link to="/components/password-input" class="govuk-link">Password input</router-link></li>
-          <li><router-link to="/components/service-navigation" class="govuk-link">Service navigation</router-link></li>
-        </ul>
+        <p class="govuk-body">10 October 2024: We've released GOV.UK Vue v1.0.1, which fixes the display of the Open Government Licence logo in the footer.</p>
+        <p class="govuk-body">Read the <a href="https://github.com/govuk-vue/govuk-vue/releases/tag/v1.0.1" class="govuk-link">full release notes</a> to see what's changed.</p>
       </gvd-whats-new>
       <div class="gvd-width-container">
         <div class="govuk-main-wrapper govuk-main-wrapper--l">
