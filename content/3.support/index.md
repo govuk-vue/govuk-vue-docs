@@ -12,7 +12,7 @@ Contact me directly if you need help or you want to request a feature:
 
 - [raise an issue on GitHub](https://github.com/govuk-vue/govuk-vue/issues), if you think there's a bug in GOV.UK Vue, a problem with this documentation or you have a feature request
 - [start a discussion on GitHub](https://github.com/govuk-vue/govuk-vue/discussions), if you have any other questions or problems
-- [tweet me @MattEason](https://twitter.com/matteason)
+- [message @matteason.me on Bluesky](https://bsky.app/profile/matteason.me)
 - [email govukvue@matteason.co.uk](mailto:govukvue@matteason.co.uk)
 
 Even if you don't have any issues, I'd love to hear how you're using GOV.UK Vue.
