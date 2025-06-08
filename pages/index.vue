@@ -3,7 +3,7 @@
     <template #content>
       <gvd-masthead/>
       <gvd-whats-new>
-          <h3 class="govuk-heading-s">7 June 2024: We released GOV.UK Vue v1.1.0</h3>
+          <h3 class="govuk-heading-s">7 June 2025: We released GOV.UK Vue v1.1.0</h3>
         <p class="govuk-body">
           We've added support for the June 2025 GOV.UK rebrand. Add the <code class="gvd-code-inline">govuk-template--rebranded</code> class to
           your <code class="gvd-code-inline">&lt;html&gt;</code> to enable rebranded styling and pass <code class="gvd-code-inline">:rebrand="true"</code>
