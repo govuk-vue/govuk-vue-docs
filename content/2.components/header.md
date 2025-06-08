@@ -10,7 +10,7 @@ See the [GOV.UK Design System documentation on the header](https://design-system
 for more information on when to use this component.
 
 ```vue
-<gv-header />
+<gv-header :rebrand="true" />
 ```
 
 ## Adding a service name
@@ -20,7 +20,7 @@ for more information on when to use this component.
 Use the `service-name` prop or slot to include your service name in the header. 
 
 ```vue
-<gv-header service-name="Service name" />
+<gv-header :rebrand="true" service-name="Service name" />
 ```
 
 ## Adding navigation links
@@ -31,7 +31,7 @@ Pass a list of `GvHeaderNavigationItem`s in the `navigation` slot to include nav
 `true` if the link is for the current page or one of its children.
 
 ```vue
-<gv-header service-name="Service name">
+<gv-header :rebrand="true" service-name="Service name">
   <template #navigation>
     <gv-header-navigation-item href="#" :active="true">
       Navigation item 1
@@ -60,7 +60,7 @@ import { NuxtLink } from '#components';
 </script>
 
 <template>
-  <gv-header service-name="Service name">
+  <gv-header :rebrand="true" service-name="Service name">
     <template #navigation>
       <gv-header-navigation-item :component="NuxtLink" to="/example-page" :active="true">
         Navigation item 1
@@ -91,7 +91,7 @@ visible when printed, as the logo will automatically be changed to black. It wil
 if the user has set up custom colours in their browser or is using high contrast mode.
 ```vue
 <template>
-  <gv-header>
+  <gv-header :rebrand="true">
     <template #logo>
       <div class="govuk-header__logo app-header__logo">
         <a href="/" class="govuk-header__link govuk-header__link--homepage">

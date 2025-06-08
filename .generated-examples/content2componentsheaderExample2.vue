@@ -1,5 +1,5 @@
 <template>
-  <gv-header service-name="Service name">
+  <gv-header :rebrand="true" service-name="Service name">
   <template #navigation>
     <gv-header-navigation-item href="#" :active="true">
       Navigation item 1

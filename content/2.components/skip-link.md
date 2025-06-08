@@ -88,7 +88,7 @@ function rejectCookies() {
     </template>
   </gv-cookie-banner>
   <gv-skip-link />
-  <gv-header />
+  <gv-header :rebrand="true" />
 </template>
 ```
 

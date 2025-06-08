@@ -1,3 +1,3 @@
 <template>
-  <gv-header />
+  <gv-header :rebrand="true" />
 </template>

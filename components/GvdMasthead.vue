@@ -48,7 +48,7 @@
   @include govuk-responsive-padding(6, "bottom");
   border-bottom: 1px solid govuk-colour("blue");
   color: govuk-colour("white");
-  background-color: govuk-colour("blue");
+  background-color: #35495e;
 }
 
 .gvd-masthead__title {

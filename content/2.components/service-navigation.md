@@ -17,18 +17,20 @@ for more information on when to use this component.
 </gv-service-navigation>
 ```
 
-## Showing service navigation under the GOV.UK header
+## Combining the header, service navigation and phase banner
 
-If you're including service navigation under the [Header](/components/header), pass `class="govuk-header--full-width-border"`
-to the header to make the blue bar the full width of the page.
+If you use the service navigation and [phase banner](./phase-banner) together, place the phase banner under the service navigation.
 
 ```vue
-<gv-header class="govuk-header--full-width-border"/>
+<gv-header :rebrand="true"/>
 <gv-service-navigation service-name="Service name">
   <gv-service-navigation-item href="/example-page">Navigation item 1</gv-service-navigation-item>
   <gv-service-navigation-item href="/example-page" :current="true">Navigation item 2</gv-service-navigation-item>
   <gv-service-navigation-item href="/example-page">Navigation item 3</gv-service-navigation-item>
 </gv-service-navigation>
+<gv-phase-banner tag="Alpha">
+  This is a new service – your <a class="govuk-link" href="https://github.com/govuk-vue/govuk-vue/issues">feedback</a> will help us to improve it.
+</gv-phase-banner>
 ```
 
 ## Marking the current page

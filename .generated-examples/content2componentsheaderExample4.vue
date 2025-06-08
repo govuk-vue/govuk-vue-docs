@@ -1,5 +1,5 @@
 <template>
-  <gv-header>
+  <gv-header :rebrand="true">
     <template #logo>
       <div class="govuk-header__logo app-header__logo">
         <a href="/" class="govuk-header__link govuk-header__link--homepage">

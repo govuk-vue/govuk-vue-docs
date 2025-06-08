@@ -1,3 +1,3 @@
 <template>
-  <gv-header service-name="Service name" />
+  <gv-header :rebrand="true" service-name="Service name" />
 </template>

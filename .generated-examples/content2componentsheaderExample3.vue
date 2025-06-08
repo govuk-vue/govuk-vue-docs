@@ -3,7 +3,7 @@ import { NuxtLink } from '#components';
 </script>
 
 <template>
-  <gv-header service-name="Service name">
+  <gv-header :rebrand="true" service-name="Service name">
     <template #navigation>
       <gv-header-navigation-item :component="NuxtLink" to="/example-page" :active="true">
         Navigation item 1

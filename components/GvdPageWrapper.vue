@@ -7,7 +7,7 @@
         </main>
       </div>
     </slot>
-    <gv-footer container-class="gvd-width-container">
+    <gv-footer class="gvd-footer" container-class="gvd-width-container">
       <template #meta>
         <gv-footer-meta>
           <gv-footer-meta-item text="GOV.UK Vue on GitHub" href="https://github.com/govuk-vue/govuk-vue"/>
@@ -130,8 +130,10 @@ $govuk-font-family: 'Inter', arial, sans-serif;
 }
 
 $button-shadow-size: $govuk-border-width-form-element;
+$gvd-vue-blue: #35495e;
+
 $gvd-button-inverted-background-colour: govuk-colour("white");
-$gvd-button-inverted-foreground-colour: govuk-colour("blue");
+$gvd-button-inverted-foreground-colour: $gvd-vue-blue;
 $gvd-button-inverted-shadow-colour: govuk-shade($gvd-button-inverted-foreground-colour, 30%);
 $gvd-button-inverted-hover-background-colour: govuk-tint($gvd-button-inverted-foreground-colour, 90%);
 
@@ -170,6 +172,10 @@ $gvd-button-inverted-hover-background-colour: govuk-tint($gvd-button-inverted-fo
     margin-left: 30px;
     margin-right: 30px;
   }
+}
+
+.gvd-footer {
+  border-top-color: #42b883;
 }
 
 </style>

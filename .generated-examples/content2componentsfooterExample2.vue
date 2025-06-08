@@ -1,5 +1,5 @@
 <template>
-  <gv-footer>
+  <gv-footer :show-crown="true">
   <template #navigation>
     <gv-footer-navigation 
       title="Two column list" 

@@ -10,7 +10,7 @@ See the [GOV.UK Design System documentation on the footer](https://design-system
 for more information on when to use this component.
 
 ```vue
-<gv-footer />
+<gv-footer :show-crown="true" />
 ```
 
 ## Meta links
@@ -29,7 +29,7 @@ Use meta links to add links to your:
 You can [use router-link or nuxt-link](/get-started/using-router-link-or-nuxt-link) for your meta links if needed.
 
 ```vue
-<gv-footer>
+<gv-footer :show-crown="true">
   <template #meta>
     <gv-footer-meta>
       <gv-footer-meta-item href="#">Item 1</gv-footer-meta-item>
@@ -52,7 +52,7 @@ grid width here, for example, `one-third`; `two-thirds`; `one-half`.
 You can [use router-link or nuxt-link](/get-started/using-router-link-or-nuxt-link) for your navigation links if needed.
 
 ```vue
-<gv-footer>
+<gv-footer :show-crown="true">
   <template #navigation>
     <gv-footer-navigation 
       title="Two column list" 
@@ -75,14 +75,16 @@ You can [use router-link or nuxt-link](/get-started/using-router-link-or-nuxt-li
 </gv-footer>
 ```
 
-## Licence and copyright information.
+## Crown, licence and copyright information
+
+If your service is branded as GOV.UK you should set `:show-crown="true"` to show the crown symbol at the top of the footer.
 
 By default, the footer will show that your content is Crown Copyright and licenced under the Open Government Licence.
 If either of these do not apply to your service, you can override them with the `content-licence` and `copyright` slots 
 and props. For example, your content may use the MIT licence but still be under Crown Copyright.
 
 ```vue
-<gv-footer>
+<gv-footer :show-crown="true">
   <template #content-licence>
     Released under the <a href="https://opensource.org/license/mit/" class="govuk-footer__link">MIT License</a>.
   </template>

@@ -3,8 +3,20 @@
     <template #content>
       <gvd-masthead/>
       <gvd-whats-new>
-        <p class="govuk-body">10 October 2024: We've released GOV.UK Vue v1.0.1, which fixes the display of the Open Government Licence logo in the footer.</p>
-        <p class="govuk-body">Read the <a href="https://github.com/govuk-vue/govuk-vue/releases/tag/v1.0.1" class="govuk-link">full release notes</a> to see what's changed.</p>
+          <h3 class="govuk-heading-s">7 June 2024: We released GOV.UK Vue v1.1.0</h3>
+        <p class="govuk-body">
+          We've added support for the June 2025 GOV.UK rebrand. Add the <code class="gvd-code-inline">govuk-template--rebranded</code> class to
+          your <code class="gvd-code-inline">&lt;html&gt;</code> to enable rebranded styling and pass <code class="gvd-code-inline">:rebrand="true"</code>
+          to the <nuxt-link to="/components/header" class="govuk-link">header</nuxt-link> and
+          <code class="gvd-code-inline">:show-crown="true"</code> to the <nuxt-link to="/components/footer" class="govuk-link">footer</nuxt-link> if your service is branded as GOV.UK.
+          See the
+          <nuxt-link to="/get-started/installing-govuk-vue#update-your-html-template" class="govuk-link">installation instructions</nuxt-link> for updated asset paths.
+        </p>
+        <p class="govuk-body">
+          We've also updated the <nuxt-link to="/components/file-upload" class="govuk-link">file upload component</nuxt-link> with new styling
+          and drag and drop functionality.
+        </p>
+        <p class="govuk-body">Read the <a href="https://github.com/govuk-vue/govuk-vue/releases/tag/v1.1.0" class="govuk-link">full release notes</a> to see what's changed.</p>
       </gvd-whats-new>
       <div class="gvd-width-container">
         <div class="govuk-main-wrapper govuk-main-wrapper--l">

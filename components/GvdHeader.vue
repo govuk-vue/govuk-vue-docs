@@ -44,17 +44,19 @@ onBeforeRouteLeave((to, from, next) => {
 </template>
 
 <style lang="scss" scoped>
+.govuk-template--rebranded .gvd-header,
+.govuk-template--rebranded .gvd-header .govuk-header__link--homepage:not(:focus){
+  background: #35495e;
+}
 // Move the blue border from the container to the header so that it spans
 // the full width of the page
-.gvd-header {
-  border-bottom: 10px solid #42b883;
-
+.govuk-template--rebranded .gvd-header {
   // Override the default 33% width on the logo in GOV.UK Frontend (prevents
   // unnecessary wrapping of "GOV.UK Design System" on smaller tablet / desktop
   // viewports)
   &__logo {
     width: auto;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
   }
 
   &__logotype-icon {

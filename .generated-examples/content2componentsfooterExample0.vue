@@ -1,3 +1,3 @@
 <template>
-  <gv-footer />
+  <gv-footer :show-crown="true" />
 </template>

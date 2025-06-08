@@ -7,10 +7,16 @@ layout: component
 Help users select and upload a file.
 
 See the [GOV.UK Design System documentation on file uploads](https://design-system.service.gov.uk/components/file-upload/)
-for more information on when to use this component.
+for more information on when to use this component. GOV.UK Vue uses the [improved file upload](https://design-system.service.gov.uk/components/file-upload#using-the-improved-file-upload-component).
 
 ```vue
-<gv-file-upload label="Upload a file"/>
+<script setup lang="ts">
+  import { ref } from 'vue'
+  const files = ref(null)
+</script>
+<template>
+  <gv-file-upload label="Upload a file" v-model="files"/>
+</template>
 ```
 
 ## Using `v-model` with file upload

@@ -1,5 +1,5 @@
 <template>
-  <gv-footer>
+  <gv-footer :show-crown="true">
   <template #meta>
     <gv-footer-meta>
       <gv-footer-meta-item href="#">Item 1</gv-footer-meta-item>
